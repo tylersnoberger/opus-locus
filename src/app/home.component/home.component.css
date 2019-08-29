@@ -1,0 +1,38 @@
+.body {
+  display: flex;
+  padding-left: 6%;
+}
+
+.mat-card {
+  flex-basis: 200px;
+}
+.mat-card-image {
+  padding-left: 18%;
+  width: 76%;
+}
+.mat-card-header {
+  padding-left: 18%;
+}
+.homework {
+  margin: 2%;
+}
+
+.data {
+  margin: 2%;
+}
+
+.mat-cell {
+  padding-right: 12px;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-row:hover {
+  background-color: #9e9e9e9e;
+  cursor: hand;
+  cursor: pointer;
+  opacity: .9;
+}
+

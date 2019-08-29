@@ -1,0 +1,29 @@
+<div class="headerBar">
+  <h1>Vigenere Decipher Tool</h1>
+  <h2>Input a block of cipher text and a key. Then hit submit.</h2>
+</div>
+<form class="listView" [formGroup]="formData">
+  <!-- <mat-list> -->
+   <div class="cipherTextWrapper">
+    <mat-form-field class="cipherText">
+      <mat-label>Enter Cipher Text Here.</mat-label>
+      <textarea matInput formControlName="cipherText" type="text" rows="10"></textarea>
+    </mat-form-field>
+   </div>
+   <div class="keyWrapper">
+    <mat-form-field class="key">
+      <mat-label>Enter Key.</mat-label>
+      <input matInput formControlName="key" type="text">
+      <mat-hint>3 Characters</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="formData.invalid || formData.pristine" (click)="breakCipher();">Decipher</button>
+   </div>
+   <div class="plainTextWrapper box">
+     <mat-form-field class="plainText">
+       <textarea matInput formControlName="plainText" type="text" rows="10"></textarea>
+     </mat-form-field>
+   </div>
+   <!-- <mat-list-item> Salt </mat-list-item>
+   <mat-list-item> Paprika </mat-list-item> -->
+  <!-- </mat-list> -->
+</form>

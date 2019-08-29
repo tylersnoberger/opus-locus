@@ -1,0 +1,31 @@
+.headerBar {
+  padding: 1%;
+  padding-left: 3%;
+}
+
+.listView {
+  width: auto;
+  padding-left: 5%
+}
+
+.cipherText {
+  width: 80%;
+  margin-top: 1%;
+}
+
+.mat-list-base .mat-list-item .cipherTextWrapper {
+  height: 160px;
+}
+
+.mat-raised-button {
+  margin-left: 2%;
+}
+
+.plainText {
+  width: 80%;
+}
+
+.box {
+  text-decoration: underline;
+  border-width: 1px;
+}
