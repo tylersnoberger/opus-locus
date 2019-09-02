@@ -41,6 +41,7 @@ import { fakeBackendProvider } from '../api';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     MaterialModule,
     ReactiveFormsModule
   ],

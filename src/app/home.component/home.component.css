@@ -1,6 +1,7 @@
 .body {
   display: flex;
   padding-left: 6%;
+  padding-bottom: 80px;
 }
 
 .mat-card {

@@ -3,22 +3,27 @@
   <div class="header">
     <mat-toolbar>
       <button mat-button mat-icon-buttton><mat-icon class="homeIcon" [routerLink]="'/'" aria-label="Home page">home</mat-icon></button>
-      <button mat-button [matMenuTriggerFor]="homework">Homework</button>
+      <button mat-button [matMenuTriggerFor]="homework">Homework Tools</button>
       <mat-menu #homework="matMenu">
         <button mat-menu-item [routerLink]="'/vigenere'">Vigenere</button>
         <button mat-menu-item>Differential Analysis</button>
       </mat-menu>
-      <button mat-button [matMenuTriggerFor]="data">Data</button>
-      <mat-menu #data="matMenu">
-        <button mat-menu-item>test1</button>
-        <button mat-menu-item>test2</button>
-      </mat-menu>
       <span class="fill-remaining-space"></span>
       <button mat-button [matMenuTriggerFor]="data" class="pull-right"><mat-icon aria-label="Action Menu">menu</mat-icon></button>
       <mat-menu #data="matMenu">
-        <button mat-button mat-icon-buttton [routerLink]="'/login'" aria-label="Logout" (click)="logout()">Logout</button>
+        <button mat-menu-item mat-icon-buttton [routerLink]="'/user'" aria-label="User Profile">Profile</button>
+        <button mat-menu-item mat-icon-buttton [routerLink]="'/login'" aria-label="Logout" (click)="logout()">Logout</button>
       </mat-menu>
     </mat-toolbar>
   </div>
-  <router-outlet class="component-body"></router-outlet>
+  <div class="component-body">
+    <router-outlet ></router-outlet>
+  </div>
+  <footer class="page-footer font-small fixed-bottom">
+      <span class="fill-remaining-space"></span>
+    <mat-toolbar>
+      <button mat-button>Contact Me</button>
+    </mat-toolbar>
+  </footer>
+    
 </div>
