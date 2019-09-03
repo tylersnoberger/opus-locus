@@ -11,6 +11,7 @@ import { first } from 'rxjs/operators';
 export class LoginComponent{
     public user: string;
     public pass: string;
+    public hide: boolean = false;
     constructor(private loginService: LoginService, private router: Router) {
     }
     login() {

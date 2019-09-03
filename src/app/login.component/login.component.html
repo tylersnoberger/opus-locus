@@ -5,10 +5,13 @@
         </mat-card-header>
         <mat-card-content style="width: 100%;">
             <mat-form-field>
-                <input matInput placeholder="Username" [(ngModel)]="user" required>
+                <input matInput placeholder="Username" [(ngModel)]="user">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Password" [(ngModel)]="pass" required>
+                <input matInput placeholder="Password" type="password">
+                <!-- <button mat-icon-button matSuffix (click)="hide = !hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button> -->
             </mat-form-field>
         </mat-card-content>
         <mat-card-actions>
